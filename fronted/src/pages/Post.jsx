@@ -9,11 +9,14 @@ const Title = styled.h1`
   justify-content: center;
   font-size: 1.5em;
   margin-bottom: 30px;
+  color: rgba(0,0,0, 0.88);
 `;
 
 const ContainerCards = styled.div`
-  display: flex;
-  flex-direction: column-reverse;
+  display: grid;
+  flex-direction: 1fr;
+  height: auto;
+  gap: 30px;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,31 +1,31 @@
 import styled from "styled-components";
 
 const CardCointainer = styled.div`
-  height: 133px;
-  width: 540px;
+  height: 450px;
+  width: 300px;
   box-shadow: 5px 7px 25px -6px rgba(129, 129, 133, 0.3);
-  display: grid;
-  grid-template-columns: 340px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 
   .card__image {
-    grid-column: 2/2;
-    grid-row: 1;
-    display: flex;
-    justify-content: flex-end;
+    height: 300px;
+    width: 300px;
   }
 
   .card__image img {
-    height: 133px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
   }
 
   .card__info {
-    grid-column: 1/2;
-    grid-row: 1;
-    display: flex;
     margin: 4px 12px;
-    flex-direction: column;
     line-height: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
   }
 
   .card__info h2 {
@@ -44,13 +44,6 @@ const CardCointainer = styled.div`
     font-size: 14px;
   }
   @media (min-width: 768px) {
-    .card__container {
-      grid-template-columns: 200px 100px;
-    }
-    .card__image img {
-      height: 33px;
-      width: 100px;
-    }
   }
 `;
 
